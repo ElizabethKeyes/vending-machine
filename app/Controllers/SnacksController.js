@@ -14,6 +14,7 @@ function _drawSnacks() {
 export class SnacksController {
   constructor() {
     _drawSnacks()
+    appState.on('snacks', _drawSnacks)
   }
 
   buy(name) {
