@@ -18,10 +18,11 @@
 <body>
   <header class="container-fluid">
     <section class="row">
-      <div class="col-12 my-header bg-dark text-light">
+      <div class="col-12 my-header bg-dark text-light d-flex justify-content-between">
         <img src="assets\img\vendr-logo.svg" class="my-logo">
         <h2 class="my-header-text">Vendr</h2>
-        <button class="btn btn-info buy-button">Add $0.25</button>
+        <h5 class="deposited-money">Money Deposited: $<span id="deposited-money"></span></h5>
+        <button onclick="app.moneyController.add()" class="btn btn-info buy-button">Add $0.25</button>
       </div>
     </section>
   </header>

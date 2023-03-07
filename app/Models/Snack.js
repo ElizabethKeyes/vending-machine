@@ -16,7 +16,7 @@ export class Snack {
           src="${this.imgURL}"
           class="my-img">
         <p class="ms-2">${this.name}<br>$${(this.price).toFixed(2)}</p>
-        <button class="btn btn-info">Buy</button>
+        <button onclick="app.snacksController.buy('${this.name}')" class="btn btn-info">Buy</button>
       </div>
     </div>
     `

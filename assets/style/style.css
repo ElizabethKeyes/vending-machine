@@ -17,6 +17,11 @@
   z-index: 0
 }
 
+.deposited-money {
+  position: fixed;
+  right: 130px;
+}
+
 .buy-button {
   position: fixed;
   right: 10px;

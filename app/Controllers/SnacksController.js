@@ -1,4 +1,5 @@
 import { appState } from "../AppState.js";
+import { snacksService } from "../Services/SnacksService.js";
 import { setHTML } from "../Utils/Writer.js";
 
 function _drawSnacks() {
@@ -13,6 +14,10 @@ function _drawSnacks() {
 export class SnacksController {
   constructor() {
     _drawSnacks()
-
   }
+
+  buy(name) {
+    snacksService.buy(name)
+  }
+
 }
